@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCustomerActivity">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow  android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/textview"
+                android:text="Add Customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+            </TextView>
+        </TableRow>
+        <TableRow  android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textview2"
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+
+            <EditText
+                android:id="@+id/ETName"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+        </TableRow>
+        <TableRow  android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/textview3"
+                android:text="Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/RadioGroup"
+                android:layout_width="293dp"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:text="M"
+                android:id="@+id/RBM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </RadioButton>
+                <RadioButton
+                    android:id="@+id/RBF"
+                    android:text="F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </RadioButton>
+            </RadioGroup>
+
+        </TableRow>
+        <TableRow  android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <Button
+            android:id="@+id/Back"
+            android:text="BACK"
+            android:layout_height="wrap_content"
+            android:width="0dp"
+            android:layout_weight="1">
+
+        </Button>
+            <Button
+                android:id="@+id/Add"
+                android:text="BACK"
+                android:layout_height="wrap_content"
+                android:width="0dp"
+                android:layout_weight="1">
+
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
